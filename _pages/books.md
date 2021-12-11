@@ -77,6 +77,10 @@ gallery:
     image_path: /assets/images/books/thinking-in-systems.jpg
     alt: Donella H. Meadows - Thinking in Systems
     title: Donella H. Meadows - Thinking in Systems
+  - url: /assets/images/books/the-hard-thing-about-hard-things.jpg
+    image_path: /assets/images/books/the-hard-thing-about-hard-things.jpg
+    alt: Ben Horowitz - The Hard Thing About Hard Things
+    title: Ben Horowitz - The Hard Thing About Hard Things
 
 ---
 
