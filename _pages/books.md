@@ -13,7 +13,6 @@ defaults:
       author_profile: true
 
 
-gallery:
 ---
 
-{% include gallery %}
+fooo bar
