@@ -85,6 +85,10 @@ gallery:
     image_path: /assets/images/books/drive.jpeg
     alt: "Daniel H. Pink  - Drive: The Surprising Truth About What Motivates Us"
     title: "Daniel H. Pink  - Drive: The Surprising Truth About What Motivates Us"
+  - url: /assets/images/books/managers-path.jpeg
+    image_path: /assets/images/books/managers-path.jpeg
+    alt: "Camille Fournier  - The Manager`s Path: A Guide for Tech Leaders Navigating Growth and Change"
+    title: "Camille Fournier  - The Manager`s Path: A Guide for Tech Leaders Navigating Growth and Change"
 
 ---
 
