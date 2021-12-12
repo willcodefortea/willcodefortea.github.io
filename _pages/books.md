@@ -13,74 +13,78 @@ defaults:
       author_profile: true
 
 gallery:
-  - url: /assets/images/books/dare-to-lead.jpg
-    image_path: /assets/images/books/dare-to-lead.jpg
+  - url: /assets/images/books/dare-to-lead.jpeg
+    image_path: /assets/images/books/dare-to-lead.jpeg
     alt: Brené Brown - Dare to Lead
     title: Brené Brown - Dare to Lead
-  - url: /assets/images/books/start-with-why.jpg
-    image_path: /assets/images/books/start-with-why.jpg
+  - url: /assets/images/books/start-with-why.jpeg
+    image_path: /assets/images/books/start-with-why.jpeg
     alt: Simon Sinek - Start with Why
     title: Simon Sinek - Start with Why
-  - url: /assets/images/books/outliers.jpg
-    image_path: /assets/images/books/outliers.jpg
+  - url: /assets/images/books/outliers.jpeg
+    image_path: /assets/images/books/outliers.jpeg
     alt: Malcom Gladwell - Outliers
     title: Malcom Gladwell - Outliers
-  - url: /assets/images/books/art-of-war.jpg
-    image_path: /assets/images/books/art-of-war.jpg
+  - url: /assets/images/books/art-of-war.jpeg
+    image_path: /assets/images/books/art-of-war.jpeg
     alt: Sun Tzu - Art of War
     title: Sun Tzu - Art of War
   - url: /assets/images/books/thinking-fast-and-slow.jpg
     image_path: /assets/images/books/thinking-fast-and-slow.jpg
     alt: Daniel Kahneman - Thinking, Fast and Slow
     title: Daniel Kahneman - Thinking, Fast and Slow
-  - url: /assets/images/books/team-topologies.jpg
-    image_path: /assets/images/books/team-topologies.jpg
+  - url: /assets/images/books/team-topologies.jpeg
+    image_path: /assets/images/books/team-topologies.jpeg
     alt: Matthew Skelton and Manuel Pais - Team Topologies
     title: Matthew Skelton and Manuel Pais - Team Topologies
-  - url: /assets/images/books/radical-candor.jpg
-    image_path: /assets/images/books/radical-candor.jpg
+  - url: /assets/images/books/radical-candor.jpeg
+    image_path: /assets/images/books/radical-candor.jpeg
     alt: Kim Scott - Radical Candor
     title: Kim Scott - Radical Candor
-  - url: /assets/images/books/machine-that-changed-the-world.jpg
-    image_path: /assets/images/books/machine-that-changed-the-world.jpg
+  - url: /assets/images/books/machine-that-changed-the-world.jpeg
+    image_path: /assets/images/books/machine-that-changed-the-world.jpeg
     alt: James P. Womack - The Machine that Changed the World
     title: James P. Womack - The Machine that Changed the World
-  - url: /assets/images/books/mythical-man-month.jpg
-    image_path: /assets/images/books/mythical-man-month.jpg
+  - url: /assets/images/books/mythical-man-month.jpeg
+    image_path: /assets/images/books/mythical-man-month.jpeg
     alt: Frederick Brooks Jr. - Mythical Man Month
     title: Frederick Brooks Jr. - Mythical Man Month
-  - url: /assets/images/books/lean-startup.jpg
-    image_path: /assets/images/books/lean-startup.jpg
+  - url: /assets/images/books/lean-startup.jpeg
+    image_path: /assets/images/books/lean-startup.jpeg
     alt: Eric Ries - The Lean Startup
     title: Eric Ries - The Lean Startup
-  - url: /assets/images/books/five-dysfunctions-of-a-team.jpg
-    image_path: /assets/images/books/five-dysfunctions-of-a-team.jpg
+  - url: /assets/images/books/five-dysfunctions-of-a-team.jpeg
+    image_path: /assets/images/books/five-dysfunctions-of-a-team.jpeg
     alt: Patrick Lencioni - The Five Dysfunctions of a Team
     title: Patrick Lencioni - The Five Dysfunctions of a Team
-  - url: /assets/images/books/peopleware.jpg
-    image_path: /assets/images/books/peopleware.jpg
+  - url: /assets/images/books/peopleware.jpeg
+    image_path: /assets/images/books/peopleware.jpeg
     alt: Tom DeMarco, Timothy Lister - Peopleware
     title: Tom DeMarco, Timothy Lister - Peopleware
-  - url: /assets/images/books/thanks-for-the-feedback.jpg
-    image_path: /assets/images/books/thanks-for-the-feedback.jpg
+  - url: /assets/images/books/thanks-for-the-feedback.jpeg
+    image_path: /assets/images/books/thanks-for-the-feedback.jpeg
     alt: Douglas Stone, Sheila Heen - Thanks for the Feedback
     title: Douglas Stone, Sheila Heen - Thanks for the Feedback
-  - url: /assets/images/books/an-elegant-puzzle.jpg
-    image_path: /assets/images/books/an-elegant-puzzle.jpg
+  - url: /assets/images/books/an-elegant-puzzle.jpeg
+    image_path: /assets/images/books/an-elegant-puzzle.jpeg
     alt: Will Larson - An Elegant Puzzle
     title: Will Larson - An Elegant Puzzle
-  - url: /assets/images/books/accelerate.jpg
-    image_path: /assets/images/books/accelerate.jpg
+  - url: /assets/images/books/accelerate.jpeg
+    image_path: /assets/images/books/accelerate.jpeg
     alt: Nicole Forsgren PhD, Jez Humble, Gene Kim - Accelerate
     title: Nicole Forsgren PhD, Jez Humble, Gene Kim - Accelerate
-  - url: /assets/images/books/thinking-in-systems.jpg
-    image_path: /assets/images/books/thinking-in-systems.jpg
-    alt: Donella H. Meadows - Thinking in Systems
-    title: Donella H. Meadows - Thinking in Systems
-  - url: /assets/images/books/the-hard-thing-about-hard-things.jpg
-    image_path: /assets/images/books/the-hard-thing-about-hard-things.jpg
+  - url: /assets/images/books/thinking-in-systems.jpeg
+    image_path: /assets/images/books/thinking-in-systems.jpeg
+    alt: "Donella H. Meadows - Thinking in Systems: A Primer"
+    title: "Donella H. Meadows - Thinking in Systems: A Primer"
+  - url: /assets/images/books/the-hard-thing-about-hard-things.jpeg
+    image_path: /assets/images/books/the-hard-thing-about-hard-things.jpeg
     alt: Ben Horowitz - The Hard Thing About Hard Things
     title: Ben Horowitz - The Hard Thing About Hard Things
+  - url: /assets/images/books/drive.jpeg
+    image_path: /assets/images/books/drive.jpeg
+    alt: "Daniel H. Pink  - Drive: The Surprising Truth About What Motivates Us"
+    title: "Daniel H. Pink  - Drive: The Surprising Truth About What Motivates Us"
 
 ---
 
