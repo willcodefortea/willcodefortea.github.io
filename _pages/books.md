@@ -2,6 +2,7 @@
 permalink: /books-that-might-be-worth-reading/
 title: Books That Might be Worth Reading
 layout: single
+modified: 13-12-2021
 
 defaults:
   # _pages
@@ -89,7 +90,13 @@ gallery:
     image_path: /assets/images/books/managers-path.jpeg
     alt: "Camille Fournier  - The Manager`s Path: A Guide for Tech Leaders Navigating Growth and Change"
     title: "Camille Fournier  - The Manager`s Path: A Guide for Tech Leaders Navigating Growth and Change"
+  - url: /assets/images/books/high-output-management.jpeg
+    image_path: /assets/images/books/high-output-management.jpeg
+    alt: Andrew S. Grove  - High Output Management
+    title: Andrew S. Grove  - High Output Management
 
 ---
+
+Last updated: {{ page.modified }}
 
 {% include gallery %}
