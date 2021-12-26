@@ -79,8 +79,7 @@ But what if wanted different behaviour in different environments? Maybe engineer
 
 ## Say hello to Ports and Adapters
 
-A **port** is the definition of some kind of behaviour.
-An **adapter** is the concrete implementation of an adapter that is actually executed.
+A __port__ is the definition of some kind of behaviour. An __adapter__ is the concrete implementation of a port that is actually executed.
 
 By having our code rely on interfaces, we can not only alter the behaviour in different environments or different function calls, but also modify it easily as our systems grow.
 
