@@ -12,7 +12,7 @@ Hello,
 I'm Ben (also willcodefortea). I write code and take pictures, sometimes things appear here.
 
 
-I got into programming at university. I was studying physics. The elegance of theories, their derivations and implications fascinated me from an early age, but I never found an area I loved. I found ones I hated sure (looking at you cosmology), but none that I wanted to study further. When we had to do some modelling in C however, I discovered that that same elegance could be found here. In to me, were just puzzles. And people would _pay you_ to do them?!
+I got into programming at university. I was studying physics. The elegance of theories, their derivations and implications fascinated me from an early age, but I never found an area I loved. I found ones I hated sure (looking at you cosmology), but none that I wanted to study further. When we had to do some modelling in C however, I discovered that that same elegance could be found here. For me, programming is all about that elegance, and the puzzle hidden in the noise. Oh people would _pay you_ to do them?!
 
 Count. Me. In.
 
