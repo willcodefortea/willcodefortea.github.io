@@ -2,11 +2,16 @@
 title:  "Hexagonal Architecture"
 categories: what-is
 layout: single
+
+header:
+  overlay_image: /assets/images/what-is/hexagon-grid.png
 ---
 
-Hexagonal architecture (or ports and adapters, depending on who you ask) is a software architecture pattern that concerns itself with the separation of application and external logic.
+Hexagonal architecture (or ports and adapters, depending on who you ask) is a software architecture pattern that concerns itself with the separation of application logic from inputs and outputs by lifting them from the application itself, to the "edges" of the code base.
 
-Let's say you have a an application that needs to send an email to its users. To do that, your code might look something like this:
+{% include figure image_path="/assets/images/what-is/Hexagonal_Architecture.svg" alt="A demonstration of inputs and outputs pushed to the edge of an application." caption="By Cth027 - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=81276242" %}
+
+Let's say you have an application that needs to send an email to its users. To do that, your code might look something like this:
 
 ```typescript
 interface User {
@@ -41,7 +46,7 @@ Now this looks all fine and well, it does the job. But it's quite difficult to t
 
 > Secondly by mocking fetch and the SESEmailClient, we're committing the sin of mocking things we don't own, which couples our tests to third party libraries!
 
-To improve things, we might consider moving logic out of this function so we can decouple their behaviour.
+To improve things, we might consider moving logic out of this function so we can decouple the behaviour.
 
 ```typescript
 interface User {
@@ -141,4 +146,6 @@ How have we taken a ~20 lines of code and ended up with over **double**?! Isn't 
 
 Like any architectural decision there are tradeoffs, and understanding those is crucial in knowing if this trade off is worth it.
 
-Ports and Adapters promotes the creation of modular and easily testable code, which in turn improves the readability of code and helps create more maintainable codebases. If that's something that sounds appealing to you, then they're probably worth while. If you're just [hacking something together in perl](https://xkcd.com/224/) however, you're probably okay.
+Ports and Adapters promotes the creation of modular and easily testable code, which in turn improves the readability of code and helps create more maintainable codebases. If that's something that sounds appealing to you, then they're probably worthwhile. If you're just [hacking something together in perl](https://xkcd.com/224/) however, you're probably okay.
+
+A few years ago Netflix [wrote a post](https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749) on the usage of this pattern and how it helped them swap reads from a RESTful API to a GraphQL based on, check it out!
