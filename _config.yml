@@ -38,6 +38,21 @@ plugins:
 
 include: ["_pages"]
 
+defaults:
+  - scope:
+      path: ''
+      type: what_is
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+
+collections_dir: collections
+collections:
+  what_is:
+    output: true
+    permalink: /what-is/:title/
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
