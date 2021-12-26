@@ -1,3 +1,5 @@
 main:
   - title: "What is..."
     url: '/what-is/'
+  - title: "About"
+    url: '/about/'

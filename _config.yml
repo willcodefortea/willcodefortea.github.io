@@ -44,7 +44,6 @@ defaults:
       type: what_is
     values:
       layout: single
-      author_profile: true
       read_time: true
 
 collections_dir: collections
@@ -52,6 +51,9 @@ collections:
   what_is:
     output: true
     permalink: /what-is/:title/
+
+author:
+  github       : willcodefortea
 
 # Exclude from processing.
 # The following items will not be processed, by default.
