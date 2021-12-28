@@ -143,7 +143,21 @@ const SesMailer: MailerPort {
   }
 }
 
-sendUpdateEmail(HttpUser, SesMailer);
+const LogMailer: MailerPort {
+  sendUpdateEmail: async (users: User[]) => {
+    const emails = users.map((user) => {
+      console.log(`Sending update email to ${user.id}`);
+    });
+
+    return Promise.resolve();
+  }
+}
+
+// Swap the mailer that's used depending on the environment we're in
+// (There are cleaner ways to do this, but it's just a demo!)
+const mailer = IS_PRODUCTION ? SesMailer : LogMailer;
+
+sendUpdateEmail(HttpUser, mailer);
 ```
 
 {% include figure image_path="/assets/images/what-is/specific-adapters.jpg" alt="How different adapter implications can be swapped to a given port." caption="By creating different adapters with the same interface, we can easily swap them." %}
