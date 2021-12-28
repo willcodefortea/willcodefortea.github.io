@@ -160,6 +160,8 @@ const mailer = IS_PRODUCTION ? SesMailer : LogMailer;
 sendUpdateEmail(HttpUser, mailer);
 ```
 
+Notice how the mailer we use varies depending on if we're in production or not? Our function that sends the update email has no idea that this has occurred, it sees the exact same behaviour regardless of what's actually happening within the adapter.
+
 {% include figure image_path="/assets/images/what-is/specific-adapters.jpg" alt="How different adapter implications can be swapped to a given port." caption="By creating different adapters with the same interface, we can easily swap them." %}
 
 ## Hold on, this seems like a LOT.
