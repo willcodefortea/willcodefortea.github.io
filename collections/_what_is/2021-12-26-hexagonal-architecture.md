@@ -148,4 +148,4 @@ Like any architectural decision there are tradeoffs, and understanding those is 
 
 Ports and Adapters promotes the creation of modular and easily testable code, which in turn improves the readability of code and helps create more maintainable codebases. If that's something that sounds appealing to you, then they're probably worthwhile. If you're just [hacking something together in perl](https://xkcd.com/224/) however, you're probably okay.
 
-A few years ago Netflix [wrote a post](https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749) on the usage of this pattern and how it helped them swap reads from a RESTful API to a GraphQL based on, check it out!
+A few years ago Netflix [wrote a post](https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749) on the usage of this pattern and how it helped them swap reads from a RESTful API to a GraphQL based one, check it out!
