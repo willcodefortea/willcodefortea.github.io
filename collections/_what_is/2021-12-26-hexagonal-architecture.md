@@ -9,7 +9,9 @@ header:
 
 Hexagonal architecture (or ports and adapters, depending on who you ask) is a software architecture pattern that concerns itself with the separation of application logic from inputs and outputs by lifting them from the application itself, to the "edges" of the code base.
 
-{% include figure image_path="/assets/images/what-is/Hexagonal_Architecture.svg" alt="A demonstration of inputs and outputs pushed to the edge of an application." caption="By Cth027 - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=81276242" %}
+{% include figure image_path="/assets/images/what-is/haxagonal-architecture.jpg" alt="A demonstration of inputs and outputs pushed to the edge of an application." caption="WIth hexagonal architecture, inputs and outputs are pushed to the edges of your application's concerns." %}
+
+## An example
 
 Let's say you have an application that needs to send an email to its users. To do that, your code might look something like this:
 
@@ -86,6 +88,10 @@ But what if wanted different behaviour in different environments? Maybe engineer
 
 A __port__ is the definition of some kind of behaviour. An __adapter__ is the concrete implementation of a port that is actually executed.
 
+
+{% include figure image_path="/assets/images/what-is/adapters-example.jpg" alt="Visual representation of ports and adapters." caption="Adapters perform some specific task as defined by their corresponding port." %}
+
+
 By having our code rely on interfaces, we can not only alter the behaviour in different environments or different function calls, but also modify it easily as our systems grow.
 
 ```typescript
@@ -139,6 +145,8 @@ const SesMailer: MailerPort {
 
 sendUpdateEmail(HttpUser, SesMailer);
 ```
+
+{% include figure image_path="/assets/images/what-is/specific-adapters.jpg" alt="How different adapter implications can be swapped to a given port." caption="By creating different adapters with the same interface, we can easily swap them." %}
 
 ## Hold on, this seems like a LOT.
 
