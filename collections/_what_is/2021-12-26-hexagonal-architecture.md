@@ -9,7 +9,7 @@ header:
 
 Hexagonal architecture (or ports and adapters, depending on who you ask) is a software architecture pattern that concerns itself with the separation of application logic from inputs and outputs by lifting them from the application itself, to the "edges" of the code base.
 
-{% include figure image_path="/assets/images/what-is/haxagonal-architecture.jpg" alt="A demonstration of inputs and outputs pushed to the edge of an application." caption="WIth hexagonal architecture, inputs and outputs are pushed to the edges of your application's concerns." %}
+{% include figure image_path="/assets/images/what-is/haxagonal-architecture.jpg" alt="A demonstration of inputs and outputs pushed to the edge of an application." caption="With hexagonal architecture, inputs and outputs are pushed to the edges of your application's concerns." %}
 
 ## An example
 
