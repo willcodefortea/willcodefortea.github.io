@@ -8,6 +8,7 @@ I spend a lot of time _talking_. Probably more than I should and definitely more
 
 (As well as a good opportunity to make sure what I'm talking about is reasonably correct.. 👀)
 
-{% for post in site.what_is %}
+{% assign what_is_posts = site.what_is | sort: "date" | reverse %}
+{% for post in what_is_posts %}
   {% include archive-single.html %}
 {% endfor %}
