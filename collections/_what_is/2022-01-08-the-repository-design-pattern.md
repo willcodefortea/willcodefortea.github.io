@@ -7,7 +7,7 @@ layout: single
 
 > tldr; a repository is an interface that controls access and mutation of a domain aggregate to some persistance layer. It's the middleman between the two.
 
-Web frameworks like [Django](https://www.djangoproject.com/) or [Ruby on Rails](https://rubyonrails.org/) come with "batteries included". They do a lot of stuff straight out of the box without you needing to spend too much time thinking about about it, leaving you free to focus on problems that are more closely aligned to the reason you're working with them in the fist place. One of these is object access and persistence, Django's Models and Rails' Active Records are the APIs around which objects are defined and then stored.
+Web frameworks like [Django](https://www.djangoproject.com/) or [Ruby on Rails](https://rubyonrails.org/) come with "batteries included". They do a lot of stuff straight out of the box without you needing to spend too much time thinking about about it, leaving you free to focus on problems that are more closely aligned to the reason you're working with them in the fist place. One of these is object access and persistence, Django's Models and Rails' Active Records are the APIs around which objects are defined, stored, and accessed.
 
 But what if you can't, or even simply don't want to use them? Maybe you're learning a new tech which doesn't have this feature, maybe you're building your own framework, or maybe you're simply working in an environment that prohibits their use? (Squeezing a big web framework into a lambda is tricksy.) You'll sidestep the constraints that such frameworks impose, but you'll have to solve a lot of problems yourself, and one tool that might help with that, is the Repository.
 
