@@ -3,15 +3,17 @@ title:  "The Repository Design Pattern"
 categories: what-is
 layout: single
 
+header:
+  overlay_image: /assets/images/what-is/repository/middleman.png
+  overlay_filter: 0.6
+excerpt: tldr; a repository is an interface that controls access and mutation of a domain aggregate to some persistance layer. It's the middleman between the two.
 ---
-
-> tldr; a repository is an interface that controls access and mutation of a domain aggregate to some persistance layer. It's the middleman between the two.
 
 Web frameworks like [Django](https://www.djangoproject.com/) or [Ruby on Rails](https://rubyonrails.org/) come with "batteries included". They do a lot of stuff straight out of the box without you needing to spend too much time thinking about about it, leaving you free to focus on problems that are more closely aligned to the reason you're working with them in the fist place. One of these is object access and persistence, Django's Models and Rails' Active Records are the APIs around which objects are defined, stored, and accessed.
 
 But what if you can't, or even simply don't want to use them? Maybe you're learning a new tech which doesn't have this feature, maybe you're building your own framework, or maybe you're simply working in an environment that prohibits their use? (Squeezing a big web framework into a lambda is tricksy.) You'll sidestep the constraints that such frameworks impose, but you'll have to solve a lot of problems yourself, and one tool that might help with that, is the Repository.
 
-## A simple blog...
+## A simple blog
 
 Let's start with the basic example of what a blog might look like. Before we can begin any modelling we need to to have some notion as to what it actually is that we're modelling, and for that we'll use an Entity Relationship Diagram (ERD).
 
@@ -27,7 +29,7 @@ Generally deciding upon aggregates is an exercise in exploratory thinking, the a
 
 In our case then, what do we have? Well, arguably one aggregate and two stand alone domain objects. i.e. comments don't make much sense without a post, so perhaps they belong under a `Post` aggregate? Tags and users on the other hand seem like independent entities, so let's keep them like that.
 
-### Brace yourself, there's some code coming...
+### Brace yourself, TypeScript incoming
 
 Above we said the repository is a pattern for access and mutating domain aggregates, before we can really see how it works, we'll need to have an idea about the other objects in the domain.
 
