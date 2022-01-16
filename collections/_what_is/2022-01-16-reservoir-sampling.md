@@ -56,7 +56,7 @@ Mathematicians have a tendency of being rather clever, and there's a few things 
 $$P_{i} = {n \over i}$$
 
 
-What about items in the reservoir? What's the probability that they are replaced? This is given by combining the probability if our selection reservoir selection, $$P_{n}$$, with the likilihood of the replacement having ocurred at all $$P_{i}$$:
+What about items in the reservoir? What's the probability that they are replaced? This is given by combining the probability if our selection reservoir selection, $P_{n}$, with the likilihood of the replacement having ocurred at all $P_{i}$:
 
 $$P_{n} \times P_{i}$$
 
@@ -100,7 +100,7 @@ function takeSample<T>(items: Iterable<T>, n: number): T[] {
 }
 ```
 
-Nice! For many use cases this algorithm is fine, but one may note that this is $$O(n)$$ in complexity as we have to generate a random number for each item in the steam above the reservoir size. This can be improved to $$O(n(1 + log({N \over n}))$$ using a more sophisticated method called Algorithm L, which I may cover here in future!
+Nice! For many use cases this algorithm is fine, but one may note that this is $O(n)$ in complexity as we have to generate a random number for each item in the steam above the reservoir size. This can be improved to $O(n(1 + log({N \over n}))$ using a more sophisticated method called Algorithm L, which I may cover here in future!
 
 
 <script type="text/x-mathjax-config">
