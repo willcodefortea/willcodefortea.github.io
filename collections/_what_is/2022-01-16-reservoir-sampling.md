@@ -72,7 +72,7 @@ Which becomes
 
 $${n \over j} \prod_{i=j+1}^{N}(1 - {1 \over i}) = {n \over N} $$
 
-Where `N` is the total number of elements seen. As per usual, this becomes much clearer with an example.
+Where `N` is the total number of elements seen.
 
 > For the record, I am not a mathemitican. These probabilities and equations are taken straight from a [Wikipedia article](https://en.wikipedia.org/wiki/Reservoir_sampling) on the same subject. I just wanted to show the maths here as it's pretty interesting and to play around with [mathjax](http://docs.mathjax.org/en/latest/index.html).
 
