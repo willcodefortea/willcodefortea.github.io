@@ -35,7 +35,7 @@ interface User = {
   name: string;
 };
 
-const UserList:React.FC = () => {
+const UserList: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [users, setUsers] = useState<User[]>([]);
 
@@ -63,7 +63,7 @@ const UserList:React.FC = () => {
       }
     </ul>
   )
-}
+};
 ```
 
 Excellent! The above is a very common situation that you'll find in many React components: Grab some data, put it on the screen. But what responsibilities does this component have?
@@ -94,9 +94,9 @@ const useUsers = () => {
   return {
     users, loading
   }
-}
+};
 
-const UserList:React.FC = () => {
+const UserList: React.FC = () => {
   const { users, loading } = useUsers();
 
   if (loading) {
@@ -113,7 +113,7 @@ const UserList:React.FC = () => {
       }
     </ul>
   )
-}
+};
 ```
 
 Well that's simplified our `UserList` component considerably. Now all it needs to worry about is _what_ to display! Great!
@@ -122,7 +122,7 @@ But what about our hook? Is it doing too much? In this case, it's probably fine.
 
 If however, we were to introduce _another_ resource say, a user's posts, then it might be worthwhile extracting and abstracting the behaviour from the resource, the _what_ from the _how_.
 
-```tsx
+```typescript
 const useFetchJson = <T>(endpoint: string, initialData: T) => {
   const [loading, setLoading] = useState<boolean>(true);
   const [data, setData] = useState<T>(initialData);
@@ -137,7 +137,7 @@ const useFetchJson = <T>(endpoint: string, initialData: T) => {
   }, []);
 
   return { loading, data };
-}
+};
 
 const useUsers = () => (
   useFetchJson<User[]>("/api/users/", [])
