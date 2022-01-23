@@ -24,3 +24,11 @@ You can find me in all the usual places :)
   <a href="https://www.github.com/willcodefortea" target="_blank"><i class="fab fa-fw fa-github"></i></a>
   <a href="https://www.linkedin.com/in/ben-emery-willcodefortea/" target="_blank"><i class="fab fa-fw fa-linkedin"></i></a>
 </div>
+
+## Technologies I'm looking to learn in 2022
+
+* GitHub actions
+* Smart Contracts
+* Haskell (finally.)
+* Terraform
+* Professional AWS Solutions Architect
