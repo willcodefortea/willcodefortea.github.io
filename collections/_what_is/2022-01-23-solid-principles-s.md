@@ -24,7 +24,7 @@ The single responsibility principle simply states that a class, function, or ent
 
 This can be argued from cognitive load alone, the amount of thinking required to understand a given block of code, if it's doing more then there's more to think about! All programming is an art of abstraction, and too often we forget to consider the abstraction that we're implementing when we're focussing on a task. We want to get the job done, and by all means there's certainly a time and place for that (as an Engineering Manager I bear some of the responsibility here), but it is a useful exercise to remind ourselves _what_ those abstractions are.
 
-> As an aside, this one thing I enjoy about creating and maintaining documentation. It forces you to consider what it is that you're implementing and why. Often resulting in avoiding Single Responsibility violations without you noticing!
+> As an aside, this is one thing I enjoy about creating and maintaining documentation. It forces you to consider what it is that you're implementing and why. Often resulting in avoiding Single Responsibility violations without you noticing!
 
 ## A React Example
 
