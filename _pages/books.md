@@ -116,3 +116,7 @@ Below is a list of books (in no particular order, perhaps I should add some? May
 * User Story Mapping
 * Nudge
 * The Founder's Dilemmas: Anticipating and Avoiding the Pitfalls That Can Sink a Startup
+
+## Other resources
+
+* https://leaddev.com/
