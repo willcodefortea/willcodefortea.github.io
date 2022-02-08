@@ -119,5 +119,5 @@ Below is a list of books (in no particular order, perhaps I should add some? May
 
 ## Other resources
 
-* https://leaddev.com/
-* https://blog.pragmaticengineer.com/holiday-tech-book-recommendations/ (Far more comprehensive list from Gergely Orosz, maybe I should just redirect there lol)
+* [LeadDev](https://leaddev.com/)
+* [Gergely Orosz's list of holiday tech books](https://blog.pragmaticengineer.com/holiday-tech-book-recommendations/) (There's a lot here, maybe I should just redirect?)
