@@ -94,9 +94,25 @@ gallery:
     image_path: /assets/images/books/high-output-management.jpeg
     alt: Andrew S. Grove  - High Output Management
     title: Andrew S. Grove  - High Output Management
+  - url: /assets/images/books/invent-and-wander.jpeg
+    image_path: /assets/images/books/invent-and-wander.jpeg
+    alt: Jeff Bezos  - Invent and Wander
+    title: Jeff Bezos  - Invent and Wander
 
 ---
 
 Last updated: {{ page.modified }}
 
+Below is a list of books (in no particular order, perhaps I should add some? Maybe some categories and write ups? hm.) that might be useful to people who are interested in management. YMMV.
+
 {% include gallery %}
+
+## The backlog
+
+* Zen and the Art of Motorcycle Maintenance
+* The Courage to Be Disliked
+* SAP Nation
+* Behind the Cloud
+* User Story Mapping
+* Nudge
+* The Founder's Dilemmas: Anticipating and Avoiding the Pitfalls That Can Sink a Startup
