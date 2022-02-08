@@ -27,7 +27,7 @@ You can find me in all the usual places :)
 
 ## Technologies I'm looking to learn in 2022
 
-* GitHub actions
+* GitHub actions ✅
 * Smart Contracts
 * Haskell (finally.)
 * Terraform
