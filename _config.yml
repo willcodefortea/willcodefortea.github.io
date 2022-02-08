@@ -26,6 +26,7 @@ baseurl: ""
 url: "https://www.willcodefortea.com"
 github_username:  willcodefortea
 repository: willcodefortea/willcodefortea.github.io
+name: "Ben Emery"
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
