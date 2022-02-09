@@ -31,4 +31,5 @@ You can find me in all the usual places :)
 * Smart Contracts
 * Haskell (finally.)
 * Terraform
+* CDK ✅
 * Professional AWS Solutions Architect
