@@ -96,8 +96,8 @@ gallery:
     title: Andrew S. Grove  - High Output Management
   - url: /assets/images/books/invent-and-wander.jpeg
     image_path: /assets/images/books/invent-and-wander.jpeg
-    alt: Jeff Bezos  - Invent and Wander
-    title: Jeff Bezos  - Invent and Wander
+    alt: Jeff Bezos - Invent and Wander
+    title: Jeff Bezos - Invent and Wander
 
 ---
 
