@@ -24,7 +24,7 @@ So this is a pretty simple principle. If we have one class that inherits another
 Let's image that our mythical creature rental business (a common example in these little posts) has grown and now has many employees! We've created a simple HR platform to keep track of and report on our team. Neat.
 
 ```typescript
-type Allergy = "dragons" | "unicorns" | "mermaid";
+type Allergy = "dragons" | "unicorns" | "mermaids";
 
 class Employee {
   private id: string;
