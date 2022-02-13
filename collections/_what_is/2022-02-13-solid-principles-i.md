@@ -49,9 +49,9 @@ class HttpClient {
   }
 }
 
-type Creature {
-  name = string;
-  type = "dragon" | "mermaid" | "unicorn";
+interface Creature {
+  name: string;
+  type: "dragon" | "mermaid" | "unicorn";
 }
 
 class CreatureApiClient extends HttpClient {
