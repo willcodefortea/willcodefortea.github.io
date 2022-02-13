@@ -78,12 +78,14 @@ const CreatureList: React.FC = () => {
     };
 
     fetchCreatures();
-  }, [setFetching]);
+  }, [setFetching, setCreatures]);
 
   if (fetching) return <span>Loading...</span>;
   return (
     <ul>
-      {creatures.map((creature) => <li key={creature.name}>{creature.name} ({creature.type})</li>)}
+      {creatures.map((creature) => (
+        <li key={creature.name}>{creature.name} ({creature.type})</li>
+      ))}
     </ul>
   );
 }
