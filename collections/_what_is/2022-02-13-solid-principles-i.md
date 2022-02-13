@@ -71,7 +71,7 @@ const CreatureList: React.FC = () => {
   const useEffect(() => {
     const fetchCreatures = async () => {
       const api = new CreatureApiClient();
-      const creatures = api.getCreatures();
+      const creatures = await api.getCreatures();
 
       setCreatures(creatures);
       setFetching(false);
