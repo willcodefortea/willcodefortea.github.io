@@ -56,7 +56,7 @@ type Creature {
 
 class CreatureApiClient extends HttpClient {
   async getCreatures(): Promise<Creature[]> {
-    return this.get<Creature[]>('/api/creatures/);
+    return this.get<Creature[]>("/api/creatures/");
   }
 }
 ```
@@ -101,7 +101,7 @@ class CreatureApiClient {
   }
 
   async getCreatures(): Promise<Creature[]> {
-    return this.api.get('/api/creatures/);
+    return this.api.get("/api/creatures/");
   }
 }
 ```
