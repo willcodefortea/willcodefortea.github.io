@@ -112,16 +112,16 @@ Well, that was simple, and arguably pointless... what have we achieved? Well, th
 ```typescript
 // BEFORE
 interface CreatureApiClient {
-  get: async <T>(url: string) => Promise<T>,
-  post: async (url: string, data: string) => Promise<void>,
-  delete: async (url: string, data: string) => Promise<void>,
-  patch: async (url: string, data: string) => Promise<void>,
-  getCreatures: async () => Promise<Creature[]>
+  get: async <T>(url: string) => Promise<T>;
+  post: async (url: string, data: string) => Promise<void>;
+  delete: async (url: string, data: string) => Promise<void>;
+  patch: async (url: string, data: string) => Promise<void>;
+  getCreatures: async () => Promise<Creature[]>;
 }
 
 // AFTER
 interface CreatureApiClient {
-  getCreatures: async () => Promise<Creature[]>
+  getCreatures: async () => Promise<Creature[]>;
 }
 ```
 
