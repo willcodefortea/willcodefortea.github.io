@@ -1,5 +1,5 @@
 ---
-title:  "SOLID Principles - L"
+title:  "SOLID Principles - I"
 categories: what-is
 layout: single
 
