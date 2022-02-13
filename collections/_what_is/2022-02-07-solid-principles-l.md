@@ -17,9 +17,10 @@ SOLID: an acronym for a collection of object-orientated programming principles, 
 * I - Interface Segregation
 * D - Dependency Inversion
 
+## Liskov Substitution
+
 So this is a pretty simple principle. If we have one class that inherits another, then any interaction with a parent class should be exchangeable with the child without disrupting the program.
 
-## The Example
 
 Let's image that our mythical creature rental business (a common example in these little posts) has grown and now has many employees! We've created a simple HR platform to keep track of and report on our team. Neat.
 
