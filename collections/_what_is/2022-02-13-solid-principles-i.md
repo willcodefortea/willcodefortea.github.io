@@ -91,7 +91,7 @@ const CreatureList: React.FC = () => {
 }
 ```
 
-Nice! Will fetch the creatures, and show a beautifully (un)styled list for our users to peruse. Done.
+Nice! This will fetch the creatures, and show a beautifully (un)styled list for our users to peruse. Done.
 
 But wait a minute, aren't we supposed to be seeing some kind of Interface segregation in action? Good catch dear reader. The problem with the above example is that the `CreatureApiClient` exposes additional methods from the underlying `HttpClient` that it does not need to. This object would be much better formed using composition, rather than inheritance. i.e.
 
