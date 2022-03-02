@@ -61,7 +61,7 @@ This is great to be aware of, but usually not something we as software engineers
 
 > The eagle eyed among you may have noticed that if we rely on collisions, then once an item is added to the filter there is no way to remove it. (If required however, there are more advanced bloom filters that do allow this.)
 
-So, if ever you're required to check if email already exists in your system at sign up time for your super popular new webapp, consider using a bloom filter! Not only will they do the job, but they're pretty fuckin' cool.
+So, if ever you're required to check if email already exists in your system at sign up time for your super popular new webapp, or you happen to be building a popular database engine and want to avoid expensive disk lookups, consider using a bloom filter! Not only will they do the job, but they're pretty fuckin' cool.
 
 
 <script type="text/x-mathjax-config">
