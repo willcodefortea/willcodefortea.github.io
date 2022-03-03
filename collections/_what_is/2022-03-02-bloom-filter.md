@@ -19,7 +19,7 @@ $$\exists \ x \in X $$
 
 > This is a fancy way of saying "does element x belong to set X" and a way of demonstrating that I'm still learning LaTex. 👀
 
-One might expect this to be quite trivial but is a great example of an algorithm where the data structure that's used dictates it's performance.
+One might expect this to be quite trivial but is a great example of an algorithm where the data structure that's used dictates its performance.
 
 ## An array
 
