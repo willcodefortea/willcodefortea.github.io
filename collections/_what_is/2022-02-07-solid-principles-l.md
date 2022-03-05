@@ -22,7 +22,7 @@ SOLID: an acronym for a collection of object-orientated programming principles, 
 So this is a pretty simple principle. If we have one class that inherits another, then any interaction with a parent class should be exchangeable with the child without disrupting the program.
 
 
-Let's image that our mythical creature rental business (a common example in these little posts) has grown and now has many employees! We've created a simple HR platform to keep track of and report on our team. Neat.
+Let's imagine that our mythical creature rental business (a common example in these little posts) has grown and now has many employees! We've created a simple HR platform to keep track of and report on our team. Neat.
 
 ```typescript
 type Allergy = "dragons" | "unicorns" | "mermaids";
@@ -37,7 +37,7 @@ class Employee {
   }
 
   /**
-    Talk to the salary service and fetch the employees salary.
+    Talk to the salary service and fetch the employee's salary.
   */
   async getSalary(): Promise<number> {
     return someSalaryService.getEmployeeSalary(this.id);
@@ -71,7 +71,7 @@ class Contractor extends Employee {
 }
 ```
 
-But now if we pass a `Contractor` instance to our `getMonthlyCost` function, it will error! We've implemented a class that if we were to use in replacement for a parent, will no longer work. So how do we fix it? There's a few ways, but the simplest (and therefore arguably the best) is to tackle this problem by altering the interface to `Employee`.
+But now if we pass a `Contractor` instance to our `getMonthlyCost` function, it will error! We've implemented a class that if we were to use in replacement for a parent, will no longer work. So how do we fix it? There are a few ways, but the simplest (and therefore arguably the best) is to tackle this problem by altering the interface to `Employee`.
 
 ```typescript
 class Employee {
