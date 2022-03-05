@@ -21,7 +21,7 @@ SOLID: an acronym for a collection of object-orientated programming principles, 
 
 Interface segregation is based around the notion that several smaller interfaces are better than one large all encompassing one. Or put another way, code should not be required to depend on interfaces it does not use.
 
-Following on from our mythical creature hiring examples, we'd like to display a list of creatures that are available for hire on a given day, to do so we need to speak to our API.
+Following on from our mythical creature hiring examples, we'd like to display a list of creatures that are available for hire on a given day. To do so, we need to speak to our API.
 
 ```typescript
 class HttpClient {
