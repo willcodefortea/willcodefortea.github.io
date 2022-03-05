@@ -9,7 +9,7 @@ header:
 excerpt: A bloom filter is a probabilistic data structure used to check set membership in constant time and space. They're pretty cool.
 ---
 
-Often when we consider the limiting behaviour of a function, usually represented in $O()$ (Big O) notation, we are talking about the time complexity. However the space that an algorithm takes to to perform is also an important consideration, and quite simply have practical implications - your code will never return if it requires more memory than is available for it to execute.
+Often when we consider the limiting behaviour of a function, usually represented in $O()$ (Big Oh) notation, we are talking about the time complexity. However the space that an algorithm takes to perform is also an important consideration, and has equal practical implications - your code will never return if it requires more memory than is available for it to execute.
 
 {% include figure image_path="/assets/images/what-is/bloom-filter/Comparison_computational_complexity.svg.png" alt="Container diagram for a unicorn rentals agency." caption="Graphs of functions commonly used in algorithm analysis. By Cmglee - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=50321072" %}{: .img-zoom}
 
