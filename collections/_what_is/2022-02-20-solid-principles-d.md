@@ -19,7 +19,7 @@ SOLID: an acronym for a collection of object-orientated programming principles, 
 
 ## Dependency Inversion
 
-This principle is all about decoupling. If you've read a previous "what-is" on [hexagonal architecture](/what-is/hexagonal-architecture/), then you would have seen this in action already. In all likelihood, you would of the SOLID principles this is the most common and widely applied, thanks in part to automated testing. (It's much easier to mock functionality when they are dependencies.)
+This principle is all about decoupling. If you've read a previous "what-is" on [hexagonal architecture](/what-is/hexagonal-architecture/), then you would have seen this in action already. In all likelihood, this is the most common and widely applied of the SOLID principles, thanks in part to automated testing. (It's much easier to mock functionality when they are dependencies.)
 
 So let's go back our mythical creature rental company. After you've had your event with your mythical creature, it sure would be nice to be able to leave a review.
 
@@ -71,7 +71,7 @@ const reviewDragon = async (
 };
 ```
 
-Great, we're able to take a users textual review and any images and store them against our dragon instance. But what if we needed to change from MySQL to Aurora? Or Redis? How would we go about testing this without needed to do a full integration test with MySQL every time?
+Great, we're able to take a user's textual review and any images and store them against our dragon instance. But what if we needed to change from MySQL to Aurora? Or Redis? How would we go about testing this without needed to do a full integration test with MySQL every time?
 
 To take a line from Raymond Hettinger - an incredible python trainer / speaker - there must be a better way!
 
