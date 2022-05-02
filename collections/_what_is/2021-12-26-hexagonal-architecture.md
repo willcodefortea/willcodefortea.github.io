@@ -2,6 +2,7 @@
 title:  "Hexagonal Architecture"
 categories: what-is
 layout: single
+starred: true
 
 header:
   overlay_image: /assets/images/what-is/hexagon-grid.png
