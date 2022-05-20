@@ -6,16 +6,16 @@ layout: single
 header:
   overlay_image: /assets/images/what-is/transactional-outbox/postbox.jpeg
   overlay_filter: 0.6
-excerpt: A transactional outbox is a architecture pattern used to guarantee the sending of events after a mutation has been performed, but only after the data has been committed.
+excerpt: A transactional outbox is an architecture pattern used to guarantee the sending of events after a mutation has been performed, but only after the data has been committed.
 ---
 
-Before we can understand what a Transactional Outbox is, it's important to first understand what a vanilla Transaction is. I may write another of these on those in a more detail, but essentially a transaction is an "all-or-nothing" guarantee. You perform multiple mutations on a system, and either they are all applied successfully, or the system "rolls-back" to the previous state and it's as if nothing happened at all.
+Before we can understand what a Transactional Outbox is, it's important to first understand what a vanilla Transaction is. I may write another 'what is' article on those in a more detail, but essentially a transaction is an "all-or-nothing" guarantee. You perform multiple mutations on a system, and either they are all applied successfully, or the system "rolls-back" to the previous state and it's as if nothing happened at all.
 
-For example, let's say Alice has a current account at a bank with $1000 in it. She'd like to begin a savings account so she open another account and moves $100 to it from the first. As a sequence diagram, it might look something like this:
+For example, let's say Alice has a current account at a bank with $1000 in it. She'd like to begin a savings account so she opens another account and moves $100 to it from the first. As a sequence diagram, it might look something like this:
 
 {% include figure image_path="/assets/images/what-is/transactional-outbox/account-move-success.jpeg" alt="Sequence diagram of a non-transactional money movement." caption="Alice instructs the bank to move her money, which it does in two operations, one to reduce the amount in her current account and another to add it to her savings." %}{: .img-zoom}
 
-But what happens if step 3 fails? The server catches fire, the network is down, someone leans on the power button, any number of things could happen which would result an in _inconsistent state_. Alice would seem to have lost money, with no way to recover!
+But what happens if step 3 fails? The server catches fire, the network is down or someone leans on the power button? Any number of things could happen which would result an in _inconsistent state_. Alice would seem to have lost money, with no way to recover!
 
 {% include figure image_path="/assets/images/what-is/transactional-outbox/account-move-failure.jpeg" alt="Sequence diagram of a non-transactional money movement that fails." caption="Alice instructs the bank to move her money, this time however the addition of money fails, Alice has lost $100!" %}{: .img-zoom}
 
@@ -48,13 +48,13 @@ Both of these accounts are within the same database, so what we're doing is:
 
 What's important to understand however, is that any of the steps that speak to the database can fail, including the final commit itself. No matter what happens however, the database ensures that if you don't perform the final commit, no changes occur.
 
-Well that's quite nice. We're relying on our data store's ability to provide transactional safety... but what happens if you need to perform updates across distinct systems where such this isn't guaranteed? Maybe we'd like to send a notification that the operation was successful, something outside of our data store? But we'd only want to do that if we successfully
+Well that's quite nice. We're relying on our data store's ability to provide transactional safety... but what happens if you need to perform updates across distinct systems where such this isn't guaranteed? Maybe we'd like to send a notification that the operation was successful - something that is outside of our data store? We'd only want to do that if the operation actually succeeded!
 
 Enter, the transactional outbox.
 
 ## Multi-phase operations (sending a notification)
 
-Performing multiple actions within the confines of a transaction is nice easy to do, but as soon as we step outside it we are open to problems. It's important to remember when designing systems like this that any operation that can fail, will eventually do so, how will your system recover? If we wanted to send the notification inside the transactional block, but the transaction fails to finish, then we would have sent a notification but the transaction would have rolled back: the user would be told a change had occurred when in reality it wouldn't have.
+Performing multiple actions within the confines of a transaction is nice easy to do, but as soon as we step outside it we are open to problems. It's important to remember when designing systems like this that any operation that can fail, will eventually do so. How will your system recover? If we wanted to send the notification inside the transactional block, but the transaction fails to finish, then we would have sent a notification but the transaction would have rolled back: the user would be told a change had occurred when in reality it wouldn't have.
 
 > Any operation that _can_ fail, will eventually do so
 
