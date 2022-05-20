@@ -8,7 +8,7 @@ tags:
 header:
   overlay_image: /assets/images/what-is/chain-of-responsibility/chain-banner.png
   overlay_filter: 0.6
-excerpt: The Chain of Responsibility is a behavioral design pattern that passes a request along a set of handlers, each one decides to process the request or pass it to the next handler.
+excerpt: The Chain of Responsibility is a behavioral design pattern that passes a request along a set of handlers, each one deciding to process the request or pass it to the next handler.
 ---
 
 ## The Pattern
@@ -20,7 +20,7 @@ The Chain of Responsibility encapsulates a behaviour into an object usually refe
 There are some considerations around the execution of a chain that are worth remembering.
 
 1. A chain can be composed of a single item
-2. A chain may not result in the handling of request at all
+2. A chain may not result in the handling of a request at all
 3. Requests may not get to the end of the chain
 
 ### When to use
@@ -29,11 +29,11 @@ This pattern is best used when there are multiple objects that could potentially
 
 ## Example
 
-Let's consider an automated system for raising incidents in an e-commerce platform. Incidents have two properties, a type and a severity. Both of these things are defined by your business, and both will impact what has to be done in response. These may be things like:
+Let's consider an automated system for raising incidents in an e-commerce platform. Incidents have two properties; a type and a severity. Both of these things are defined by your business and both will impact what has to be done in response. These may be things like:
 
 1. Notify senior leadership
 2. Update the status page
-3. Stop users from buying anything (an extreme, but possible)
+3. Stop users from buying anything (extreme, but possible)
 4. ... many others that are likely to grow in time
 
 In code, this might begin by looking something like this:
@@ -96,8 +96,8 @@ class BaseHandler {
 
 Each handler makes two decisions:
 
-* if it will process the request
-* if it'll pass it to next handler along the chain
+* if it'll process the request
+* if it'll pass the request to next handler along the chain
 
 ```typescript
 class SecurityHandler extends BaseHandler {
@@ -188,4 +188,4 @@ const handleIncident = (incidentType: IncidentType, sev: Severity) => {
 }
 ```
 
-The are many benefits to the application of this pattern in this case. We've create more cohesive code that adheres to Single Responsibility and Open / Closed design principals, result in code that is much easier to understand and test. \o/
+The are many benefits to the application of this pattern in this case. We've create more cohesive code that adheres to the [Single Responsibility](https://www.willcodefortea.com/what-is/solid-principles-s/) and [Open / Closed](https://www.willcodefortea.com/what-is/solid-principles-o/) design principles, resulting in code that is much easier to understand and test. \o/
