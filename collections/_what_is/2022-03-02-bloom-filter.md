@@ -29,11 +29,11 @@ The first solution that comes to mind may be to use an array to store your set a
 
 You might be thinking "well I wouldn't do that, I'd just use a Set", and you dear reader would be showing your smarts. Or that you've been bitten by this before. If you require to do this operation frequently, or your dataset is sufficiently large, then $O(n)$ will no longer be sufficient. You need something you can rely on, you need something _constant_.
 
-Sets usually do not preserve the order of items that they contain, but share the property that membership tests are done in $O(1)$ time. (How they do this is quite cool, in python a Set is basically a hashmap where the key and value are the same thing + some extra operations.)
+Sets usually do not preserve the order of items that they contain, but share the property that membership tests are done in $O(1)$ time. (How they do this is quite cool; in python a Set is basically a hashmap where the key and value are the same thing + some extra operations.)
 
 Okay great, we've got the best possible solution. What's next?
 
-Well, what about space complexity. What if what you want to check doesn't neatly fit into the allocated space your algorithm must run in? Difficult to imagine I know, but there are several fairly common cases where this can become a problem:
+Well, what about space complexity. What if the thing you want to check doesn't neatly fit into the allocated space your algorithm must run in? Difficult to imagine I know, but there are several fairly common cases where this can become a problem:
 
 1. You're in a resource starved environment (like serverless)
 2. This will run in the browser on a user's device, where it's hard to predict what they'll have available
