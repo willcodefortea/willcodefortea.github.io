@@ -10,7 +10,7 @@ header:
 excerpt: An algorithmic approach to solving optimisation problems by breaking them into small subproblems and solving those first.
 ---
 
-When the optimial solution to a problem can be expressed as the sum of solutions to subproblems within it, Dynamic Programming can be a....
+When the optimial solution to a problem can be expressed as the sum of solutions to subproblems within it, Dynamic Programming (DP) can be a very powerful tool to minimise the amount of duplicated work. Let's start by looking at a oft used example in DP, the humble Finbonacci Sequence.
 
 ## Fibonacci Sequence
 
