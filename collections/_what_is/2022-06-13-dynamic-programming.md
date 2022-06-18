@@ -131,7 +131,7 @@ This is a classic problem from the world of dynamic programming. It details a si
 
 So then the question, how can we find the cheapest route? Well... we could enumerate every possible route, but that doesn't appeal.
 
-{% include figure image_path="/assets/images/what-is/dynamic-programming/stagecoach.jpeg" alt="Graph of the stagecoach problem." caption="The above weighted graph shows the potential paths the fortune teller could take, how can we find the cheapest route from A→J?" %}{: .img-zoom}
+{% include figure image_path="/assets/images/what-is/dynamic-programming/stagecoach.jpg" alt="Graph of the stagecoach problem." caption="The above weighted graph shows the potential paths the fortune teller could take, how can we find the cheapest route from A→J?" %}{: .img-zoom}
 
 If we were to take the naive approach and simply select the cheapest route at each node, we would follow the path A→B→F→I→J for a total cost of 13. However if we were to instead pay more earlier, we could save money later. If we substituted the first three steps with A→D→F and keep the rest the same, the total cost becomes 11!
 
