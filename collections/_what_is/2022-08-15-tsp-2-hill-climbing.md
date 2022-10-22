@@ -28,9 +28,7 @@ These design decisions are important, as they massively impact the type of solut
 
 ## Climbing up that hill
 
-We've seen that we can easily create a solution that is totally random, where do we go from here? Well, now that we have an initial solution, what happens if we begin making changes to it? As we've said above, our current representation doesn't allow for invalid solutions, just different degrees of bad ones. So by taking a solution and applying a _move_ to it, we can create a new one. And if it's better, well simply keep it.
-
-This type of perturbation to the solution is called a _local search_. We're starting from one solution and applying a small change to it and ending up relatively close in the overall solution space.
+We've seen that we can easily create a solution that is totally random, where do we go from here? Well, now that we have an initial solution, what happens if we begin making changes to it? As we've said above, our current representation doesn't allow for invalid solutions, just different degrees of bad ones. So by taking a solution and applying a _move_ to it, we can create a new one. And if it's better, we'll simply keep it. This is called hill climbing, while this type of perturbation to the solution is called a _local search_. We're starting from one solution and applying a small change to it and ending up relatively close in the overall solution space.
 
 {% include figure image_path="/assets/images/what-is/tsp-2/hill-climbing.png" alt="Graph showing the impact of hill climbing." caption="Here we see how hill climbing might impact the solution. We make small changes and keep ones that improve the score until we no longer make any improvements." %}
 
