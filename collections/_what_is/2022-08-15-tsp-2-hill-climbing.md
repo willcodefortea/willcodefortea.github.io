@@ -40,6 +40,7 @@ So what kind of moves are we talking about here? What can we do? Well, a non exh
 * Flip a sub-route
 * Take a random city, and try every location
 * Take a random sub-route, try every location
+* (or anything else you can think of)
 
 There's many we could do! I've listed them here roughly in order of their complexity to perform, and impact on the search. For now however, and to illustrate the power of hill climbing, let's implement the first move.
 
@@ -123,7 +124,6 @@ runner.run(
 
 Neat, but what does this actually do for us? Let's try it out and see!
 
-
 <div id="tsp-app-root"></div>
 
 <br />
@@ -151,5 +151,6 @@ Both excellent questions, and will be covered in future posts!
     singleMoveEnabled: true
   }
 </script>
-<script type="module" crossorigin src="/assets/apps/tsp/index.86d32ae2.js"></script>
+<script type="module" crossorigin src="/assets/apps/tsp/index.9a908d6e.js"></script>
+<script type="module" crossorigin src="/assets/apps/tsp/worker.e18e5bfb.js"></script>
 <link rel="stylesheet" href="/assets/apps/tsp/index.7ba47d89.css">
