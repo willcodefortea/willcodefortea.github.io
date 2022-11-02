@@ -52,6 +52,9 @@ collections:
   what_is:
     output: true
     permalink: /what-is/:title/
+  blog:
+    output: true
+    permalink: /blog/:title/
 
 author:
   github       : willcodefortea
