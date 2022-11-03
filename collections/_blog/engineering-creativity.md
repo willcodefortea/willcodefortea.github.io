@@ -17,8 +17,7 @@ The shortest possible summary I've able to come up for this is this: creativity 
 
 Being creative doesn't have to be hard, but it is _extremely hard_ to do it well. That being said the degree of creativity required for a task is something to consider, sometimes you just need to meet the acceptance criteria and get it done.
 
-{% include figure image_path="/assets/images/blog/engineering-creativity/work-smart-not-hard.jpeg" alt="A group of people pushing cubes, while one in front pushes a sphere." caption="The above is often considered a good creative example for 'work smarter, not faster', but the question I have is: what is the job? If it was to transport the most material, then the person with the sphere has reduced the overall amount by [around 48%!](https://en.wikipedia.org/wiki/Sphere)" %}
-
+{% include figure image_path="/assets/images/blog/engineering-creativity/work-smart-not-hard.jpeg" alt="A group of people pushing cubes, while one in front pushes a sphere." caption="The above is often considered a good creative example for 'work smarter, not faster', but a question you might ask is: what was the job? If it was to transport the most material, then the person with the sphere has reduced the overall amount by [around 48%!](https://en.wikipedia.org/wiki/Sphere) Or maybe it was to transport the cube itself, in which case destroying it doesn't help at all." %}
 
 ### What is art? Is it different? Is art creative?
 
@@ -58,7 +57,7 @@ Rinse. Repeat.
 
 (I should note that as contractors are usually paid at a premium, I picture the above engineer "rinsing" in the swimming pool of coins like Scrouge McDuck.)
 
-The other extreme then, would be an engineer at Bell Labs, back when they had no real remit for what they actually did, given the extreme wealth of their parent company AT&T. Engineers would pursue interests, from hacking (I mean.. liberating..) the 202 because they wanted to create custom chess fonts, to inventing C, their contributions to the programming community / society cannot be understated. In relation to this article however, I would also put it to you that the majority of the work at Bell Labs could have been _predicted_.
+The other extreme then, would be an engineer at Bell Labs, back when they had no real remit for what they actually did, given the extreme wealth of their parent company AT&T. Engineers would pursue interests, from hacking (I mean.. liberating..) the 202 because they wanted to create custom chess fonts, to inventing C, their contributions to the programming community / society cannot be understated. In relation to this article however, I would also put it to you that the majority of the work at Bell Labs could not have been _predicted_.
 
 Chances are you don't work at Bell Labs, or a company like it. Nor do you repeat the exact same programming problems for fantastic sums of money. But clearly there is a spectrum of creativity here.
 
@@ -66,7 +65,7 @@ So what does that mean for the rest of us?
 
 ## Okay fine, Engineering is creative. So what.
 
-Hopefully I've convinced you that engineering _can_ be a creative pursuit, what does that mean? Well, this really depends on who you are. Are you a lone-wolf SME, part of a team, or leading a team?
+Hopefully I've convinced you that engineering _can_ be a creative pursuit, what does that mean? Well, this really depends on who you are. Are you part of a team, or leading a team?
 
 ### As a team member
 
@@ -105,4 +104,4 @@ So, what behaviours do we desire in the team? Well, we want to incentivize healt
 
 There's lots of things a manager can do to turn the dial on the above, and in time I'll most likely update this with resources for them. Most likely you can already think of a few that would help.
 
-My with all of this, is that I believe creativity and innovation need not be random acts of fate, but can be engineered.
+I believe creativity and innovation need not be random acts of fate, but can be actively engineered.
