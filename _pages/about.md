@@ -30,6 +30,6 @@ You can find me in all the usual places :)
 * GitHub actions ✅
 * Smart Contracts
 * Haskell (finally.)
-* Terraform
+* Terraform ✅
 * CDK ✅
 * Professional AWS Solutions Architect
