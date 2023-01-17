@@ -25,11 +25,24 @@ You can find me in all the usual places :)
   <a href="https://www.linkedin.com/in/ben-emery-willcodefortea/" target="_blank"><i class="fab fa-fw fa-linkedin"></i></a>
 </div>
 
+## Technologies I'm looking to learn in 2023
+
+* Build a compiler
+* Professional AWS Solutions Architect (THIS TIME)
+* TrueLayer
+* [More things as I think of them]
+
 ## Technologies I'm looking to learn in 2022
 
 * GitHub actions ✅
+  * Extremely useful and very easy to create CI/CD pipelines
 * Smart Contracts
+  * Massively lost interest in all things blockchain. The philosophy is great, the reality less so.
 * Haskell (finally.)
+  * Still not spent time with this, but have leaned into partially-functional approaches in my day to day programming
 * Terraform ✅
+  * plan + apply with state > cloudformation
 * CDK ✅
+  * It's fine, but the notion of an imperative language to manage infrastructure gives me the heebie jeebies
 * Professional AWS Solutions Architect
+  * I've been wanting to tick this box for a few years... Maybe next year.
