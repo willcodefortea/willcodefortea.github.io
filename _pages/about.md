@@ -30,6 +30,8 @@ You can find me in all the usual places :)
 * Build a compiler
 * Professional AWS Solutions Architect (THIS TIME)
 * TrueLayer
+* Rust
+* Cloudflare Workers
 * [More things as I think of them]
 
 ## Technologies I'm looking to learn in 2022
